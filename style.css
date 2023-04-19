@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2? family= Sofia+Sans+Extra+Condensed:wght@100 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Comic+Neue:wght@300 & family= Sofia+Sans+Extra+Condensed:wght@100 & display=swap');
+
+/*        header       */
+
+.render {
+    background-color: rgb(153, 124, 124);
+    text-align: center;
+    padding: 10px;
+}
+.render a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    letter-spacing: 2px;
+    border: 1px solid black;
+    padding: 8px;
+}
+.render a:active{
+    background: #33333336;
+}
+.ale {
+    font-size: 2rem;
+    font-weight: 8px;
+    text-align: center;
+    text-shadow: rgb(153, 124, 124) 2px 2px;
+    letter-spacing: 0.125rem;
+}
+/*        MAIN         */
+
+.foto {
+    background-image: url("img/banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4.0625rem;
+    margin: 5px;
+}
+.foto h2{
+    text-align: start;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px #333333;
+}
+.foto h2:hover{
+    text-shadow: 0px 4px 4px #333333,8px 8px 8px rgb(153, 64, 64);
+}
+
+.deportiva {
+    background-image: url("img/mujeres.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem;
+    margin: 5px;
+}
+.deportiva h2{
+    color: white;
+    text-align: start;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+.deportiva h2:hover{
+    text-shadow: 0px 4px 4px #333333,8px 8px 8px rgb(153, 64, 64);
+}
+.titulo {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.165);
+    color: black;
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin: 15px 15px;
+    font-size: 40px;
+}
+
+.titulo1 {
+    text-align: center;
+    font-family: 'Comic Neue', cursiva;
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: rgb(153, 64, 64);
+}
+.compra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.compra div {
+    border: 2px solid rgb(153, 124, 124);
+    border-radius: 5px;
+    box-shadow: -5px 5px 5px rgb(153, 124, 124);
+    margin: 10px;
+}
+.compra div img {
+    width: 250px;
+    height: 250px;
+}
+.compra div a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background:rgb(153, 124, 124);
+    color: black;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+/* Pag Marcas*/
+.conteiner-img{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+.conteiner-img .div-img figure{
+    width: 100%;
+    height: 100%;
+}
+.conteiner-img .div-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    }
+.conteiner-img .div-img:nth-child(1){
+    grid-column-start: span 2;
+}
+.conteiner-img .div-img:nth-child(4){
+    grid-row-start: span 2;
+}
+
+
+.fixed {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+/*      footer      */
+.footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 350px;
+    color: black;
+    overflow: hidden;
+}
+.footer img{
+    width: 50px;
+    height: 50px;
+}
+.footer h5{
+    margin-top:15px;
+}
+.footer iframe{
+    width: 90%;
+    height: 150px;
+    border: 10px solid rgb(153, 124, 124);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(153, 124, 124);
+}
+@media(min-width: 768px){
+    .foto {
+        padding: 12.5rem;
+    }
+    .foto h2{
+        font-size: 35px;
+    }
+    .compra{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .compra div img {
+        width: 150px;
+        height: 150px;
+    }
+    .deportiva{
+        padding: 12.5rem;
+    }
+    .deportiva h2{
+        font-size: 35px;
+    }
+    }
+@media(min-width: 1200px){
+    .render a{
+        font-size: 15px;
+    }
+    .ale{
+        font-size: 3rem;
+        font-weight: 12px;
+    }
+    .nav-item{
+        font-size: 25px;
+    }
+    .foto {
+        padding: 25rem;
+        }
+    .foto h2{
+        font-size: 60px;
+    }
+    .compra div img {
+        width: 300px;
+        height: 300px;
+    }
+    .deportiva{
+        padding: 25rem;
+    }
+    .deportiva h2{
+        font-size: 50px;
+    }
+    .footer iframe{
+        width: 30%
+    }
+}
