@@ -10,15 +10,11 @@
 }
 .render a{
     text-decoration: none;
-    color: black;
     font-size: 13px;
     letter-spacing: 2px;
-    border: 1px solid black;
     padding: 8px;
 }
-.render a:active{
-    background: #33333336;
-}
+
 .ale {
     font-size: 2rem;
     font-weight: 8px;
@@ -103,7 +99,16 @@
     letter-spacing: 2px;
     padding: 5px;
 }
-/* Pag Marcas*/
+/*                              pag productos*/
+.productos{
+   font-family: monospace;
+   font-size: 70px;
+   text-align: center;
+}
+
+
+
+/*                                Pag Marcas*/
 .conteiner-img{
     width: 100%;
     max-width: 1100px;
