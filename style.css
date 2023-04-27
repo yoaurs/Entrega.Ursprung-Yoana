@@ -20,23 +20,6 @@
 }
 
 /*        MAIN         */
-
-.foto {
-    background-image: url("img/banner2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 4.0625rem;
-    margin: 5px;
-    text-align: start;
-    color: white;
-    font-size: 30px;
-    text-shadow: 0px 4px 4px #333333;
-}
-
-.foto:hover {
-    text-shadow: 0px 4px 4px #333333, 8px 8px 8px rgb(153, 64, 64);
-}
-
 .deportiva {
     background-image: url("img/mujeres.jpg");
     background-repeat: no-repeat;
