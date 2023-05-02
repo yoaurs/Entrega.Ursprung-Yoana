@@ -1,0 +1,40 @@
+@media(min-width: 768px) {
+    .compra {
+       @include flex(row);
+    }
+    .compra div img {
+        @include size(150px, 150px);
+    }
+    .deportiva {
+        padding: 12.5rem;
+    }
+    .deportiva h2 {
+        font-size: 35px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .render a {
+        font-size: 15px;
+    }
+    .ale {
+        font-size: 3rem;
+        font-weight: 12px;
+    }
+    .nav-item {
+        font-size: 25px;
+    }
+    .compra div img {
+       @include size(300px, 300px);
+    }
+    .deportiva {
+        padding: 25rem;
+    }
+    .deportiva h2 {
+        font-size: 50px;
+    }
+    .footer iframe {
+        width: 30%
+    }
+    
+}

@@ -1,0 +1,107 @@
+/*        MAIN         */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.deportiva {
+    background-image: url("../img/mujeres.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem;
+    margin: 5px;
+
+    h2 {
+        color: white;
+        text-align: start;
+        font-size: 15px;
+        letter-spacing: 3px;
+
+        &:hover {
+            text-shadow: $box-shadow;
+        }
+    }
+}
+
+    .titulo {
+        text-align: center;
+        background:$background;
+        color: black;
+        font-size: 40px;
+        letter-spacing: 3px;
+        margin: 15px 15px;
+        cursor: default;
+        animation: titulo 3s infinite linear;
+        
+    }
+    @keyframes titulo{
+        0%{transform: translateX(-15px);}
+        50%{transform: translateX(15px);
+        background-color:$color-primary;}
+        75%{transform: translateX(-15px);
+        background-color:$color-primary;}
+        100%{transform: translateX(15px);}
+    }
+
+    .titulo1 {
+        text-align: center;
+        font-family: 'Comic Neue', cursiva;
+        font-size: 35px;
+        letter-spacing: 3px;
+        color: $color-primary;
+    }
+    .compra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            border: 2px solid $color-primary;
+            border-radius: 5px;
+            box-shadow: -5px 5px 5px $color-primary;
+            margin: 10px;
+        }
+        img {
+            @include size(250px, 250px);
+        }
+        a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background: $color-primary;
+            color: black;
+            font-size: 20px;
+            letter-spacing: 2px;
+            padding: 5px;
+        }
+    }
+    /*      footer      */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: $background;
+    @include size(100%, 350px);
+    color: black;
+    overflow: hidden;
+    .fixed {
+        img{
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+    }
+    }
+    img {
+        @include size(50px, 50px);
+    }
+    h5 {
+        margin-top: 15px;
+    }
+    iframe {
+        @include size(90%, 150px);
+        border: 10px solid $color-primary;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px $color-primary;
+    }
+}

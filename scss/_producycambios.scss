@@ -1,0 +1,19 @@
+
+.productos {
+    font-family: monospace;
+    font-size: 60px;
+    text-align: center;
+}
+.card:hover{
+    box-shadow: $box-shadow;
+    transform: translateY(-3%);
+}
+
+
+
+/*      pag Cambios y Devoluciones */
+.cambios{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+}
